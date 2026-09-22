@@ -97,6 +97,15 @@ class _WorkoutDashboardState extends State<WorkoutDashboard> {
           padding: const EdgeInsets.fromLTRB(20, 8, 20, 32),
           child: Column(
             children: [
+              const Text(
+                'SOLO STUDIO • GOWTHAM REVANUR • 002574540',
+                style: TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 0.7,
+                ),
+              ),
+              const SizedBox(height: 10),
               _ProgressCard(
                 reps: reps,
                 sets: sets,
@@ -113,6 +122,8 @@ class _WorkoutDashboardState extends State<WorkoutDashboard> {
                   letterSpacing: 1.1,
                 ),
               ),
+              const SizedBox(height: 10),
+              const _BugFixTrace(),
               const SizedBox(height: 24),
               Wrap(
                 spacing: 16,
@@ -247,6 +258,24 @@ class _ProgressCard extends StatelessWidget {
       ),
     );
   }
+}
+
+class _BugFixTrace extends StatelessWidget {
+  const _BugFixTrace();
+
+  @override
+  Widget build(BuildContext context) => Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        decoration: BoxDecoration(
+          color: Theme.of(context).colorScheme.surfaceContainerHighest,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: const Text(
+          '// BUG #2 fixed: setState updates shared dashboard state',
+          style: TextStyle(fontFamily: 'monospace', fontSize: 11),
+        ),
+      );
 }
 
 class _Metric extends StatelessWidget {

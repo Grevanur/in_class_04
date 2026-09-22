@@ -115,7 +115,12 @@ Source: [Flutter ValueNotifier API](https://api.flutter.dev/flutter/foundation/V
 
 ## Evidence Files
 
-- `TeamSoloStudio-Round1-Quiz.png`
-- `TeamSoloStudio-Round2-BugProof.png`
-- `TeamSoloStudio-Demo.gif`
+- `evidence/TeamSoloStudio-Demo.gif`: an 18-second capture of live exercise
+  actions, changing progress, goal completion, set logging, and theme change.
+- `evidence/TeamSoloStudio-Round2-BugProof.png`: live fixed behavior, the
+  visible BUG #2 trace, and the team/member identifier in one frame.
+
+The Round 1 score screenshot is intentionally not synthesized. Capture it from
+the completed in-class Widget Identification Blitz with your team's actual
+score and findings visible before uploading it to Canvas.
 - `main.dart`
